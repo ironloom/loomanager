@@ -1,6 +1,6 @@
-from src.loomanager.errors import err
+from loomanager.errors import err
 from zenyx import printf
-import src.loomanager.files as files
+import loomanager.files as files
 import threading
 import keyboard
 import time

@@ -1,2 +1,2 @@
 
-python -m src.loomanager --INNER.cls %*
+python -m loomanager --INNER.cls %*

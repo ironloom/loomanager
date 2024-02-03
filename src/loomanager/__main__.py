@@ -1,7 +1,7 @@
 from zenyx import Arguments, printf
-import src.loomanager.files as files
-import src.loomanager.errors as errors
-import src.loomanager.publish as publish
+import loomanager.files as files
+import loomanager.errors as errors
+import loomanager.publish as publish
 import sys
 import os
 

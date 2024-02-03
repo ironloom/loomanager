@@ -1,4 +1,4 @@
-from src.loomanager.errors import err
+from loomanager.errors import err
 import toml
 import zenyx
 import os

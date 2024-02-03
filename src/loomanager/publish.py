@@ -1,7 +1,7 @@
-from src.loomanager.errors import err, VERBOSE
+from loomanager.errors import err, VERBOSE
 from zenyx import printf
-import src.loomanager.files as files
-import src.loomanager.input as inp
+import loomanager.files as files
+import loomanager.input as inp
 import os
 import time
 
@@ -72,9 +72,9 @@ def git():
     version = get_new_version(update_type) 
 
     printf.title("Confirm")
-    printf(f"@!New Version$&\n {version}")
-    printf(f'\n@!Commit Message$&\n "{commit_message}"')
-    printf(f'\n@!Commit Description$&\n {commit_description}"')
+    printf(f"@!New Version$&\n@~{version}$&")
+    printf(f'\n@!Commit Message$&\n@~"{commit_message}"$&')
+    printf(f'\n@!Commit Description$&\n@~"{commit_description}"$&')
 
     time.sleep(0.2)
 
@@ -87,7 +87,7 @@ def git():
     
     files.modify_file_for_new_version(version)
 
-    printf.title("✨ Creating Commit & Pushing Changes ✨")
+    printf.title("Creating Commit & Pushing Changes")
     
     printf("\n@~@?git add .$&")
     os.system("git add .")
