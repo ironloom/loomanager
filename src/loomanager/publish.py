@@ -66,7 +66,7 @@ def git():
     printf("\n@!Enter Commit Message$&")
     commit_message = inp.get_input(incomplete_err=True)
 
-    printf("\n\n@!Enter Commit Message$&")
+    printf("\n\n@!Enter Commit Description$&")
     commit_description = inp.get_input()
 
     version = get_new_version(update_type) 
