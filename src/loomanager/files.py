@@ -152,7 +152,7 @@ def modify_file_for_new_version(new_v: str):
             )
         )
 
-    if not CONFIG.get("project-type"):
+    if not CONFIG.get("project-type") == "python":
         return
 
     with open(os.path.realpath("./pyproject.toml"), "r+") as f:
