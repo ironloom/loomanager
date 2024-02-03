@@ -26,7 +26,7 @@ def main():
 
     if args.normals[0] == "update":
         """Update the module"""
-        os.system("pythonn -m pip install --updgrade loomanager")
+        os.system("python -m pip install --updgrade loomanager")
 
     files.init()
 
